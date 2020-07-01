@@ -3,10 +3,10 @@ Version = "0.1.0"
 config = {
     font: "PT Mono"  # e.g. "Courier New", "PT Mono", "OperatorMono-Light"
     backgroundBlur: "5px"   # e.g. false, "15px"
-    todoFile: "todo.widget/example.md"
+    todoFile: "minimalist-todo.widget/example.md"
 }
 
-command: "python3 todo.widget/parse.py #{config.todoFile}"
+command: "python3 minimalist-todo.widget/parse.py #{config.todoFile}"
 
 render: (output) ->
         "<div id=\"todoid\">#{output}</div>"
