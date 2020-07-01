@@ -1,8 +1,12 @@
-# minimalist-todo
-Minimalist todo list widget for Übersicht
+# `minimalist-todo` Übersicht widget
+Minimalist todo list widget for [Übersicht](http://tracesof.net/uebersicht/). Todo lists are stored in a single Markdown file; the goal here is to provide a very simple text-based interface for managing todo lists.
 
-A basic tool for parsing simple todo lists from Markdown files. The goal here is to provide some basic organization without overwhelming the user with features. A basic example file:
+## Instructions
+1. Install [Übersicht](http://tracesof.net/uebersicht/)
+1. Copy (or symlink) `minimalist-todo.widget` to your Übersicht widget folder (`~/Library/Application Support/Übersicht/widgets`)
+2. Edit `minimalist-todo.widget/todo.coffee` to change the location of your todo Markdown file (line 6). It defaults to the included `example.md`; I put mine in `~/org/todo.md`.
 
+The example file:
 ```markdown
 # Dates to keep track of
 - Karen's wedding <2020-08-25>
@@ -22,12 +26,11 @@ x Sand deck
 ## Yard work
 - Mow lawn
 ```
-
 gets rendered as:
 
 ![Screenshot of widget](https://raw.githubusercontent.com/jarredbarber/minimalist-todo/master/example.png)
 
-This only supports basic Markdown:
+We only supports basic Markdown:
 * Sections (`#`)
 * Projects (`##`)
 * TODO items (`-` or `x` for completed items)
