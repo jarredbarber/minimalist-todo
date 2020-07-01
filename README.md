@@ -36,3 +36,5 @@ We only supports basic Markdown:
 * TODO items (`-` or `x` for completed items)
 * Basic formatting: `**` for bold and `_` for italics
 * Dates (`<YYYY-MM-DD>`); dates at the end of a line get a countdown
+
+We only render lines that start with `#`, `##`, `-`, or `x`; everything else is skipped. This means that items can be associated with more detailed information that won't show up in the widget.
