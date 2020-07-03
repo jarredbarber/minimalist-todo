@@ -3,8 +3,9 @@ Minimalist todo list widget for [Übersicht](http://tracesof.net/uebersicht/). T
 
 ## Instructions
 1. Install [Übersicht](http://tracesof.net/uebersicht/)
-1. Copy (or symlink) `minimalist-todo.widget` to your Übersicht widget folder (`~/Library/Application Support/Übersicht/widgets`)
-2. Edit `minimalist-todo.widget/todo.coffee` to change the location of your todo Markdown file (line 6). It defaults to the included `example.md`; I put mine in `~/org/todo.md`.
+2. Copy (or symlink) `minimalist-todo.widget` to your Übersicht widget folder (`~/Library/Application Support/Übersicht/widgets`)
+3. Edit `minimalist-todo.widget/todo.coffee` to change the location of your todo Markdown file (line 6). I put mine in `~/org/todo.md`, which is the default.
+4. Change the `refreshFrequency` to taste. I have a high `refreshFrequency` of 60s because I use `vim` customizations to trigger refresh upon saving.
 
 The example file:
 ```markdown
